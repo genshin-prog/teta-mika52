@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С Днём Рождения, Алексей! 🎉</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Pacifico&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- SCREAMER OVERLAY -->
+  <div id="screamer" class="screamer hidden">
+    <div class="screamer-content">
+      <img id="screamer-img" src="" alt="БУ!">
+      <div class="screamer-text">С ДНЁМ РОЖДЕНИЯ, АЛЕКСЕЙ!!! 🎉🎊💥</div>
+    </div>
+  </div>
+
+  <!-- CONFETTI CANVAS -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- FLOATING EMOJIS -->
+  <div id="floating-emojis"></div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="stars-bg"></div>
+      <h1 class="main-title">🎂 ПОЗДРАВЛЯЮ С ДНЁМ РОЖДЕНИЯ! 🎂</h1>
+      <p class="subtitle shake">Тебя скоро депортируют и пойдёшь на СВО 😈🫡</p>
+      <div class="birthday-cake">🎂</div>
+    </header>
+
+    <!-- PHOTO GALLERY -->
+    <section class="gallery">
+      <h2 class="section-title">📸 Галерея памяти (пока не уехал)</h2>
+      <div class="photo-grid">
+        <div class="photo-card" data-joke="Красавчик! Военная форма тебе пойдёт 😅">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrN8iLE9kecEXr0RW3OQlQLvNaCgMO5V68AQ&s" alt="Фото 1">
+          <div class="photo-overlay">Фото №1</div>
+        </div>
+        <div class="photo-card" data-joke="Улыбайся! Повестка уже в пути 📬">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdZ2ep1w8lOPwT5f-uKSaD05_iTSdxPRIdw&s" alt="Фото 2">
+          <div class="photo-overlay">Фото №2</div>
+        </div>
+        <div class="photo-card" data-joke="Героический вид! 🫡">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQymHew8PNHYVA-INuK-Az_Cfccu5jqSSyq6w&s" alt="Фото 3">
+          <div class="photo-overlay">Фото №3</div>
+        </div>
+        <div class="photo-card" data-joke="Ты готов к приключениям? 🎒">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVGl4wH6xbEkEmF_Uj956xhnfmO_DMudl5A&s" alt="Фото 4">
+          <div class="photo-overlay">Фото №4</div>
+        </div>
+        <div class="photo-card" data-joke="Следующий день рождения — в окопе! 😂">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDN_ljsK8oUtHl-HYBSbV2TeES-8diX_Sgiw&s" alt="Фото 5">
+          <div class="photo-overlay">Фото №5</div>
+        </div>
+        <div class="photo-card" data-joke="Мужественный взгляд! 🦾">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwWLcjG7GTaoMvt8xiczl4tky0urAuTrLRA&s" alt="Фото 6">
+          <div class="photo-overlay">Фото №6</div>
+        </div>
+        <div class="photo-card" data-joke="Ну всё, попался 😂">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5QqPGX1Yuko09LbV_fNwUrwrQsgn55za81g&s" alt="Фото 7">
+          <div class="photo-overlay">Фото №7</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WISHES -->
+    <section class="wishes">
+      <h2 class="section-title">🎁 Пожелания от друзей</h2>
+      <div class="wish-cards">
+
+        <div class="wish-card card-1 bounce-in">
+          <div class="wish-emoji">🎂</div>
+          <p>Желаю тебе здоровья, счастья и того, чтобы военкомат нашёл тебя только после 100 лет! Хотя... шансов мало 😂</p>
+        </div>
+
+        <div class="wish-card card-2 bounce-in">
+          <div class="wish-emoji">✈️</div>
+          <p>Желаю тебе путешествий! Правда, маршрут может не совпасть с твоими планами. Депортация — тоже путешествие, если подумать 🧳</p>
+        </div>
+
+        <div class="wish-card card-3 bounce-in">
+          <div class="wish-emoji">💪</div>
+          <p>Ты такой сильный духом человек! Эта сила тебе очень пригодится. Особенно скоро. Источники говорят. 🫡</p>
+        </div>
+
+        <div class="wish-card card-4 bounce-in">
+          <div class="wish-emoji">🎖️</div>
+          <p>Желаю тебе стать героем! Причём не метафорически. Буквально. Вот повестка. Поздравляю, герой! 🏅</p>
+        </div>
+
+        <div class="wish-card card-5 bounce-in">
+          <div class="wish-emoji">🎊</div>
+          <p>Новый год жизни — новые горизонты! За тем горизонтом что-то интересное происходит, говорят. Не спрашивай что именно 😬</p>
+        </div>
+
+        <div class="wish-card card-6 bounce-in">
+          <div class="wish-emoji">🍕</div>
+          <p>Желаю вкусной еды! Наслаждайся пока можешь нормально питаться. Скоро будет тушёнка. Зато бесплатно! 🥫</p>
+        </div>
+
+        <div class="wish-card card-7 bounce-in">
+          <div class="wish-emoji">😴</div>
+          <p>Желаю крепкого сна в уютной кровати! В ближайшем будущем кровать может поменяться на что-то другое. Спи сейчас побольше! 🛏️</p>
+        </div>
+
+        <div class="wish-card card-8 bounce-in">
+          <div class="wish-emoji">🌟</div>
+          <p>Ты — звезда! Настоящая. Военные звёзды на погонах тоже считаются. Поздравляю с будущим повышением! ⭐⭐</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BUTTONS SECTION -->
+    <section class="buttons-section">
+      <h2 class="section-title">🎮 Интерактивное веселье</h2>
+      <p class="btn-warning">⚠️ Нажимай осторожно... или не осторожно 😈</p>
+
+      <div class="buttons-grid">
+        <button class="fun-btn btn-red" onclick="triggerScreamer(0)">
+          🎁 Открыть подарок
+        </button>
+        <button class="fun-btn btn-purple" onclick="triggerScreamer(1)">
+          🎂 Задуть свечи
+        </button>
+        <button class="fun-btn btn-orange" onclick="triggerScreamer(2)">
+          📬 Получить почту
+        </button>
+        <button class="fun-btn btn-green" onclick="launchConfetti()">
+          🎊 Праздничный взрыв!
+        </button>
+        <button class="fun-btn btn-blue" onclick="triggerScreamer(3)">
+          🤫 Секретное пожелание
+        </button>
+        <button class="fun-btn btn-pink" onclick="triggerScreamer(4)">
+          📞 Важный звонок...
+        </button>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section">
+      <h2 class="section-title">⏰ Обратный отсчёт до депортации</h2>
+      <div class="countdown-timer">
+        <div class="timer-block">
+          <span id="days">??</span>
+          <label>дней</label>
+        </div>
+        <div class="timer-sep">:</div>
+        <div class="timer-block">
+          <span id="hours">??</span>
+          <label>часов</label>
+        </div>
+        <div class="timer-sep">:</div>
+        <div class="timer-block">
+          <span id="minutes">??</span>
+          <label>минут</label>
+        </div>
+        <div class="timer-sep">:</div>
+        <div class="timer-block">
+          <span id="seconds">??</span>
+          <label>секунд</label>
+        </div>
+      </div>
+      <p class="timer-note">*Дата строго засекречена военкоматом</p>
+    </section>
+
+    <!-- FINAL MESSAGE -->
+    <section class="final-section">
+      <div class="final-card">
+        <h2>💖 На самом деле...</h2>
+        <p class="final-text">Алексей, мы тебя очень любим! Это всё шутки (почти 😅). Желаем тебе здоровья, счастья, и чтобы всё было хорошо! Живи долго и весело, и пусть твой день рождения будет незабываемым!</p>
+        <div class="heart-animation">❤️ 🎉 ❤️</div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- JOKE TOOLTIP -->
+  <div id="joke-tooltip" class="joke-tooltip hidden"></div>
+
+  <!-- AUDIO -->
+  <audio id="bg-music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-happyrock.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="music-btn" id="music-btn" onclick="toggleMusic()">🎵 Музыка</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
